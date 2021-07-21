@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample Vue</title>
+</head>
+<body>
+    <h1>Sample vue exercise using vue CDN</h1>
+    <div id="app">
+        <h2>{{product}} are in stock</h2>
+    </div>
+</body>
+<script src="https://unpkg.com/vue"></script>
+    <script>
+        const app= new Vue({
+            el: '#app',
+            data:{
+                product:'Boots' 
+            }
+        })
+        console.log(app.product)
+    </script>
+</html>
