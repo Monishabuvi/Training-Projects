@@ -1,4 +1,2 @@
-# Training-Projectsjuujuju
-lik
-ujyjy
-yhhh
+# Training-Projects
+Sample view
