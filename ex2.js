@@ -29,6 +29,22 @@ var app=new Vue({
         product: 'Books',
         image:'images/book-image.jpg',
         inventory:12,
-        details:['Javascript','C++','Python','PHP']
+        details:['Javascript','Node JS','Vue JS'],
+        variants:[{
+            variant:'OneBook',
+            code:2453,
+            bookImage:'images/book-image.jpg'
+        },{
+            variant:'Many Books',
+            code:2567,
+            bookImage:'images/multiplebook.jpg'
+        }],
+        cart:0
+    },
+        methods:{
+            addTocart:function (){
+                this.cart += 1
+            }
+            
     }
 })
