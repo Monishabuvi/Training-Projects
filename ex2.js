@@ -44,6 +44,9 @@ var app=new Vue({
         methods:{
             addTocart:function (){
                 this.cart += 1
+            },
+            updateProduct:function(variantImg){
+                this.image=variantImg
             }
             
     }
