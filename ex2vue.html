@@ -24,8 +24,8 @@
         <p v-else-if="inventory<=10 &&  inventory>0">Almost Sold out</p>
         <p v-else='inventory'>Out of stock</p>
         <ul><li v-for='detail in details'>{{detail}}</li></ul>
-        <div v-for='variantsList in variants'>
-            <p @mouseover='updateProduct(variants.bookImage)'  >{{variantsList.variant}}</p>
+        <div v-for='variantsList in variants':key="variants.code">
+            <p @mouseover='updateProduct(variants.bookImage)'>{{variantsList.variant}}</p>
         </div>
         <button v-on:click='addTocart'>Add to Cart</button>
         <div class="cart">
